@@ -9,4 +9,8 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   return object;
 }
 
-function 
+function deleteFromObjectByKey(object, key) {
+  let copy = object;
+  delete copy.key;
+  return copy;
+}
